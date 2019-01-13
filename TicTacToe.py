@@ -6,23 +6,111 @@ import time
 
 
 
-root = Tk()                                                                                                                     #inserisco una finestra vuota che ho chiamato root
-#root.geometry("500x500")
+root = Tk()
 root.resizable(False, False)
 root.wm_title("TicTacToe")                                                                                        #modifico il titolo della finestra
 root.iconbitmap("tris.ico")
-
-
 Contendente_1 = PhotoImage(file="Franco.png")
 Contendente_2 = PhotoImage(file="Cervello.png")
 
-
-def set_move(event):
+#funzione prima casella
+def set_move_contendente_1_1(event):
     time.sleep(0.2)
     label = Label(Frame_0, image=Contendente_1)
     label.grid()
     return
+def set_move_contendente_2_1(event):
+    label = Label(Frame_0, image=Contendente_2)
+    label.grid()
+    return
 
+#funzione seconda casella
+def set_move_contendente_1_2(event):
+    time.sleep(0.2)
+    label = Label(Frame_1, image=Contendente_1)
+    label.grid()
+    return
+def set_move_contendente_2_2(event):
+    label = Label(Frame_1, image=Contendente_2)
+    label.grid()
+    return
+
+#funzione terza casella
+def set_move_contendente_1_3(event):
+    time.sleep(0.2)
+    label = Label(Frame_2, image=Contendente_1)
+    label.grid()
+    return
+def set_move_contendente_2_3(event):
+    label = Label(Frame_2, image=Contendente_2)
+    label.grid()
+    return
+
+#funzione quarta casella
+def set_move_contendente_1_4(event):
+    time.sleep(0.2)
+    label = Label(Frame_3, image=Contendente_1)
+    label.grid()
+    return
+def set_move_contendente_2_4(event):
+    label = Label(Frame_3, image=Contendente_2)
+    label.grid()
+    return
+
+#funzione quinta casella
+def set_move_contendente_1_5(event):
+    time.sleep(0.2)
+    label = Label(Frame_4, image=Contendente_1)
+    label.grid()
+    return
+def set_move_contendente_2_5(event):
+    label = Label(Frame_4, image=Contendente_2)
+    label.grid()
+    return
+
+#funzione sesta casella
+def set_move_contendente_1_6(event):
+    time.sleep(0.2)
+    label = Label(Frame_5, image=Contendente_1)
+    label.grid()
+    return
+def set_move_contendente_2_6(event):
+    label = Label(Frame_5, image=Contendente_2)
+    label.grid()
+    return
+
+#funzione settima casella
+def set_move_contendente_1_7(event):
+    time.sleep(0.2)
+    label = Label(Frame_6, image=Contendente_1)
+    label.grid()
+    return
+def set_move_contendente_2_7(event):
+    label = Label(Frame_6, image=Contendente_2)
+    label.grid()
+    return
+
+#funzione ottava casella
+def set_move_contendente_1_8(event):
+    time.sleep(0.2)
+    label = Label(Frame_7, image=Contendente_1)
+    label.grid()
+    return
+def set_move_contendente_2_8(event):
+    label = Label(Frame_7, image=Contendente_2)
+    label.grid()
+    return
+
+#funzione nona casella
+def set_move_contendente_1_9(event):
+    time.sleep(0.2)
+    label = Label(Frame_8, image=Contendente_1)
+    label.grid()
+    return
+def set_move_contendente_2_9(event):
+    label = Label(Frame_8, image=Contendente_2)
+    label.grid()
+    return
 
 
 
@@ -32,48 +120,48 @@ header.grid(row=0, column=0)
 #frame vuoti per caselle
 
 Frame_0 = Frame(root, width=250, height=250, bg="white")
-Frame_0.bind("<Button-1>", set_move)
-Frame_0.bind("<Button-3>",)
+Frame_0.bind("<Button-1>", set_move_contendente_1_1)
+Frame_0.bind("<Button-3>", set_move_contendente_2_1)
 Frame_0.grid(row=1, column=0)
 
 Frame_1 = Frame(root, width=250, height=250, bg="white")
-Frame_1.bind("<Button-1>",)#qui metto il nome della funzione da eseguire
-Frame_1.bind("<Button-3>",)#qui metto il nome della funzione da eseguire
+Frame_1.bind("<Button-1>", set_move_contendente_1_2)
+Frame_1.bind("<Button-3>", set_move_contendente_2_2)
 Frame_1.grid(row=1, column=2)
 
 Frame_2 = Frame(root, width=250, height=250, bg="white")
-Frame_2.bind("<Button-1>",)#qui metto il nome della funzione da eseguire
-Frame_2.bind("<Button-3>",)#qui metto il nome della funzione da eseguire
+Frame_2.bind("<Button-1>", set_move_contendente_1_3)
+Frame_2.bind("<Button-3>", set_move_contendente_2_3)
 Frame_2.grid(row=1, column=4)
 
 Frame_3 = Frame(root, width=250, height=250, bg="white")
-Frame_3.bind("<Button-1>",)#qui metto il nome della funzione da eseguire
-Frame_3.bind("<Button-3>",)#qui metto il nome della funzione da eseguire
+Frame_3.bind("<Button-1>", set_move_contendente_1_4)
+Frame_3.bind("<Button-3>", set_move_contendente_2_4)
 Frame_3.grid(row=3, column=0)
 
 Frame_4 = Frame(root, width=250, height=250, bg="white")
-Frame_4.bind("<Button-1>",)#qui metto il nome della funzione da eseguire
-Frame_4.bind("<Button-3>",)#qui metto il nome della funzione da eseguire
+Frame_4.bind("<Button-1>", set_move_contendente_1_5)
+Frame_4.bind("<Button-3>", set_move_contendente_2_5)
 Frame_4.grid(row=3, column=2)
 
 Frame_5 = Frame(root, width=250, height=250, bg="white")
-Frame_5.bind("<Button-1>",)#qui metto il nome della funzione da eseguire
-Frame_5.bind("<Button-3>",)#qui metto il nome della funzione da eseguire
+Frame_5.bind("<Button-1>", set_move_contendente_1_6)
+Frame_5.bind("<Button-3>", set_move_contendente_2_6)
 Frame_5.grid(row=3, column=4)
 
 Frame_6 = Frame(root, width=250, height=250, bg="white")
-Frame_6.bind("<Button-1>",)#qui metto il nome della funzione da eseguire
-Frame_6.bind("<Button-3>",)#qui metto il nome della funzione da eseguire
+Frame_6.bind("<Button-1>", set_move_contendente_1_7)
+Frame_6.bind("<Button-3>", set_move_contendente_2_7)
 Frame_6.grid(row=5, column=0)
 
 Frame_7 = Frame(root, width=250, height=250, bg="white")
-Frame_7.bind("<Button-1>",)#qui metto il nome della funzione da eseguire
-Frame_7.bind("<Button-3>",)#qui metto il nome della funzione da eseguire
+Frame_7.bind("<Button-1>", set_move_contendente_1_8)
+Frame_7.bind("<Button-3>", set_move_contendente_2_8)
 Frame_7.grid(row=5, column=2)
 
 Frame_8 = Frame(root, width=250, height=250, bg="white")
-Frame_8.bind("<Button-1>",)#qui metto il nome della funzione da eseguire
-Frame_8.bind("<Button-3>",)#qui metto il nome della funzione da eseguire
+Frame_8.bind("<Button-1>", set_move_contendente_1_9)
+Frame_8.bind("<Button-3>", set_move_contendente_2_9)
 Frame_8.grid(row=5, column=4)
 
 
