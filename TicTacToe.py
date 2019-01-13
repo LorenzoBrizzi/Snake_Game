@@ -221,5 +221,13 @@ separator_8.grid(row=4, column=3)
 separator_9 = Frame(root, width=250, height=5, bg="black")
 separator_9.grid(row=4, column=4)
 
+def Status():
+    print("ciao")
+
+#status bar
+
+Status_bar = Label(root, text = "ciao belo", bd = 1, relief = SUNKEN)
+Status_bar.grid(columnspan=5, sticky="nsew")
+
 
 root.mainloop()
